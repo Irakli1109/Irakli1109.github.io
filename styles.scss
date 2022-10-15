@@ -3,16 +3,22 @@
   height: 100vh;
   background-image: url("./assets/smartmeter.jpg");
 }
+.temp {
+  height: 100px;
+  width: 247px;
+  animation: mymove 9s infinite;
+  background-color: rgb(32, 28, 28);
+}
 
-.img1 > h3 {
-  position: relative;
-  top: 45%;
+.temp h3 {
   width: fit-content;
   transition: width 2s;
   padding-bottom: 1%;
+  font-weight: bolder;
+  top: 250px;
   font-size: 1.9rem;
   color: rgb(197, 161, 161);
-  animation: mymove 9s infinite;
+
   &:hover {
     color: green;
     cursor: pointer;
@@ -20,10 +26,18 @@
 }
 
 @keyframes mymove {
-  from {
-    left: 0px;
+  0% {
+    margin-left: 0px;
+    color: white;
   }
-  to {
-    left: 85%;
+  25% {
+    margin-left: 40%;
+    color: rgb(232, 17, 63);
+  }
+  50% {
+    margin-left: 82%;
+  }
+  100% {
+    margin-left: 0%;
   }
 }

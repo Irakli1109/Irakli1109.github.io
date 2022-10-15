@@ -4,41 +4,63 @@
   background-image: url("./assets/smartmeter.jpg");
 }
 
-.img1 > h3 {
-  position: relative;
-  top: 45%;
+.temp {
+  height: 100px;
+  width: 247px;
+  -webkit-animation: mymove 9s infinite;
+          animation: mymove 9s infinite;
+  background-color: #201c1c;
+}
+
+.temp h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   -webkit-transition: width 2s;
   transition: width 2s;
   padding-bottom: 1%;
+  font-weight: bolder;
+  top: 250px;
   font-size: 1.9rem;
   color: #c5a1a1;
-  -webkit-animation: mymove 9s infinite;
-          animation: mymove 9s infinite;
 }
 
-.img1 > h3:hover {
+.temp h3:hover {
   color: green;
   cursor: pointer;
 }
 
 @-webkit-keyframes mymove {
-  from {
-    left: 0px;
+  0% {
+    margin-left: 0px;
+    color: white;
   }
-  to {
-    left: 85%;
+  25% {
+    margin-left: 40%;
+    color: #e8113f;
+  }
+  50% {
+    margin-left: 82%;
+  }
+  100% {
+    margin-left: 0%;
   }
 }
 
 @keyframes mymove {
-  from {
-    left: 0px;
+  0% {
+    margin-left: 0px;
+    color: white;
   }
-  to {
-    left: 85%;
+  25% {
+    margin-left: 40%;
+    color: #e8113f;
+  }
+  50% {
+    margin-left: 82%;
+  }
+  100% {
+    margin-left: 0%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
