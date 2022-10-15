@@ -1,5 +1,5 @@
-# SamrtMeter
+# SmartMeter
 ### Shalva Butkhuzi
-### Irkli Turabelidze
+### Irakli Turabelidze
 ### Giorgi Turdziladze
 
