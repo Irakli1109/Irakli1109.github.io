@@ -40,7 +40,7 @@
     color: #e8113f;
   }
   50% {
-    margin-left: 82%;
+    margin-left: 83.5%;
   }
   100% {
     margin-left: 0%;
@@ -57,10 +57,14 @@
     color: #e8113f;
   }
   50% {
-    margin-left: 82%;
+    margin-left: 83.5%;
   }
   100% {
     margin-left: 0%;
   }
+}
+
+.helper {
+  height: 300px;
 }
 /*# sourceMappingURL=styles.css.map */
