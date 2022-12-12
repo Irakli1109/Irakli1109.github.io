@@ -72,4 +72,42 @@
 .helper {
   height: 300px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media only screen and (max-width: 800px) {
+  @-webkit-keyframes mymove {
+    0% {
+      margin-left: 0px;
+      color: white;
+    }
+    25% {
+      margin-left: 20%;
+    }
+    50% {
+      margin-left: 50%;
+    }
+    75% {
+      margin-left: 20%;
+    }
+    100% {
+      margin-left: 0%;
+    }
+  }
+  @keyframes mymove {
+    0% {
+      margin-left: 0px;
+      color: white;
+    }
+    25% {
+      margin-left: 20%;
+    }
+    50% {
+      margin-left: 50%;
+    }
+    75% {
+      margin-left: 20%;
+    }
+    100% {
+      margin-left: 0%;
+    }
+  }
+}
