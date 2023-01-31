@@ -1,5 +1,3 @@
-# SmartMeter
-### Shalva Butkhuzi
-### Irakli Turabelidze
-### Giorgi Turdziladze
+# HBOclone
 
+live link: https://khmalaa.github.io/HBOclone/
