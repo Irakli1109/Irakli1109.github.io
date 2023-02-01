@@ -1,3 +1,3 @@
 # SmartMeter
 
-Irakli1109.github.io
+https://Irakli1109.github.io
