@@ -4,6 +4,7 @@ html {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -695,6 +696,10 @@ header {
   background-color: rgb(134, 130, 130);
   transform: rotate(-45deg);
   transition: transform 0.3s;
+}
+
+.none {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 712px) {
