@@ -1,3 +1,3 @@
-# HBOclone
+# SmartMeter
 
-live link: https://khmalaa.github.io/HBOclone/
+Irakli1109.github.io
