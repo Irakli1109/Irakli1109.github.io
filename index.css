@@ -717,6 +717,10 @@ body::-webkit-scrollbar-thumb {
   visibility: hidden;
 }
 
+.dark {
+  background-color: black;
+}
+
 @media screen and (max-width: 712px) {
   .header-ul li {
     width: 40vh;

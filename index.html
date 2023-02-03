@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Meter</title>
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="index.css" />
     <script
@@ -176,13 +177,12 @@
       <div class="dates-content">
         <div class="dates">
           <div class="dates-inner">
-            <p style="color: #b535f6">Project Timeline</p>
-            <p>SEE FULL SCHEDULE ></p>
+            <p style="color: #b535f6; font-size: 22px;">Project Timeline</p>
           </div>
 
           <div class="dates-inner1">
             <div class="episode-dates date1">
-              <p style="color: black">
+              <p>
                 Building The Board and Designing Web Page
               </p>
               <p>January-February, 2023</p>
@@ -475,10 +475,43 @@
 
       function mode() {
         cnt++;
-        if (cnt % 2 == 1)
+        if (cnt % 2 == 1) {
           document.getElementById("mode").innerHTML = "Dark Mode: On";
-        else document.getElementById("mode").innerHTML = "Dark Mode: Off";
+          document.body.style.backgroundColor = "black";
+          document.getElementsByTagName("header")[0].style.backgroundColor = "rgb(37 33 33)";
+          document.getElementsByClassName("second-section-video")[0].style.backgroundColor = "black";
+          document.getElementsByClassName("second-section-video")[1].style.backgroundColor = "black";
+          document.getElementsByClassName("second-section-video")[2].style.backgroundColor = "black";
+          document.getElementsByClassName("second-section-video")[3].style.backgroundColor = "black";
+          document.getElementsByClassName("dates-content")[0].style.backgroundColor = "black";
+
+          document.getElementsByClassName("swiper-slide")[0].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName("swiper-slide")[1].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName("swiper-slide")[2].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName("swiper-slide")[3].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName("swiper-slide")[4].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName("swiper-slide")[5].style.backgroundColor = "rgb(75 51 51)";
+        }
+        else { 
+          document.getElementById("mode").innerHTML = "Dark Mode: Off";
+          document.body.style.backgroundColor = "white"
+          document.getElementsByTagName("header")[0].style.backgroundColor = "white";
+          document.getElementsByClassName("second-section-video")[0].style.backgroundColor = "white";
+          document.getElementsByClassName("second-section-video")[1].style.backgroundColor = "white";
+          document.getElementsByClassName("second-section-video")[2].style.backgroundColor = "white";
+          document.getElementsByClassName("second-section-video")[3].style.backgroundColor = "white";
+          document.getElementsByClassName("dates-content")[0].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[0].style.backgroundColor = "white";
+
+          document.getElementsByClassName("swiper-slide")[0].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[1].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[2].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[3].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[4].style.backgroundColor = "white";
+          document.getElementsByClassName("swiper-slide")[5].style.backgroundColor = "white";
+        }
       }
     </script>
+
   </body>
 </html>
