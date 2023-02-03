@@ -86,8 +86,9 @@ header {
 
 .first-section {
   height: 480px;
-  background: url(section-img.jpg);
+  /* background: url(./images/cover.jpg); */
   background-position: center center;
+  background:linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1)), url('./images/cover.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -95,7 +96,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .first-section-info {
