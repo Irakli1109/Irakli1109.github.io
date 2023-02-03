@@ -554,6 +554,17 @@ header {
   display: block;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b535f6;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #b535f6;  /* creates padding around scroll thumb */
+}
+
 @media screen and (min-width: 1440px) {
   .sixth-section img {
     max-height: 300px;
