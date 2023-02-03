@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Smart Meter</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/6a865e69a2.js"
@@ -36,17 +37,37 @@
         </div>
         <img class="logo" src="./images/Smart_Meter_Logo.png" />
         <ul id="toggle" class="header-ul">
-          <li><a href="#secondSecId" style="color: #b535f6;">TEAM</a></li>
-          <li><a href="#" style="color: #b535f6;">SCHEDULE </a></li>
-          <li><a href="#" style="color: #b535f6;"> PROJECT</a></li>
-          <li><a href="#" style="color: #b535f6;">PLAN </a></li>
-          <li><a href="#" style="color: #b535f6;">COMPONENTS</a></li>
+          <li>
+            <a href="#secondSecId" style="color: #b535f6; text-decoration: none"
+              >TEAM</a
+            >
+          </li>
+          <li>
+            <a href="#schedule" style="color: #b535f6; text-decoration: none"
+              >SCHEDULE
+            </a>
+          </li>
+          <li>
+            <a href="#project" style="color: #b535f6; text-decoration: none">
+              PROJECT</a
+            >
+          </li>
+          <li>
+            <a href="#plans" style="color: #b535f6; text-decoration: none"
+              >PLANS
+            </a>
+          </li>
+          <li>
+            <a href="#components" style="color: #b535f6; text-decoration: none"
+              >COMPONENTS</a
+            >
+          </li>
         </ul>
       </div>
 
       <div class="header-inner2">
-        <a>SIGN IN</a>
-        <a> GET HBOMAX</a>
+        <a></a>
+        <a id="mode" onclick="mode()"> Dark Mode: Off</a>
       </div>
     </header>
 
@@ -54,7 +75,7 @@
       <div class="first-section-info">
         <p>PREMIERS MAY 15</p>
 
-        <h1 >The Smart Meter</h1>
+        <h1>The Smart Meter</h1>
 
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro error
@@ -62,18 +83,18 @@
           fugit perspiciatis qui autem doloribus repellendus similique ab?
         </p>
 
-        <div class="first-section-info-inner">
+        <!-- <div class="first-section-info-inner">
           <a
             ><span><i class="fa-solid fa-play"></i></span>WATCH THE TRAILER</a
           >
-        </div>
+        </div> -->
       </div>
     </section>
 
     <section class="second-section" id="secondSecId">
       <div class="none">hello measeter</div>
       <div class="none">hello measeter</div>
-      <h1 class="watch" style="color: #b535f6;">Our Project Team</h1>
+      <h1 class="watch" style="color: #b535f6">Our Project Team</h1>
 
       <div class="second-section-videos">
         <div class="video1 second-section-video">
@@ -83,7 +104,7 @@
           </div>
 
           <div class="videos-info">
-            <p style="color: #b535f6;">Electrical Engineer</p>
+            <p style="color: #b535f6">Electrical Engineer</p>
             <p>Shalva Butkhuzi</p>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
@@ -101,7 +122,7 @@
           </div>
 
           <div class="videos-info">
-            <p style="color: #b535f6;">Computer Engineer</p>
+            <p style="color: #b535f6">Computer Engineer</p>
             <p>Irakli Turabelidze</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -119,7 +140,7 @@
           </div>
 
           <div class="videos-info">
-            <p style="color: #b535f6;">Computer Engineer</p>
+            <p style="color: #b535f6">Computer Engineer</p>
             <p>Giorgi Turdziladze</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,7 +158,7 @@
           </div>
 
           <div class="videos-info">
-            <p style="color: #b535f6;">Team Mentor</p>
+            <p style="color: #b535f6">Team Mentor</p>
             <p>Davit Chkhaidze</p>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
@@ -149,16 +170,21 @@
         </div>
       </div>
 
+      <div id="schedule"></div>
+      <div></div>
+
       <div class="dates-content">
         <div class="dates">
           <div class="dates-inner">
-            <p style="color: #b535f6;">Project Timeline</p>
+            <p style="color: #b535f6">Project Timeline</p>
             <p>SEE FULL SCHEDULE ></p>
           </div>
 
           <div class="dates-inner1">
             <div class="episode-dates date1">
-              <p>Building The Board and Designing Web Page</p>
+              <p style="color: black">
+                Building The Board and Designing Web Page
+              </p>
               <p>January-February, 2023</p>
             </div>
 
@@ -177,7 +203,7 @@
         </div>
       </div>
     </section>
-
+    <div id="project"></div>
     <section class="third-section">
       <a href="#"
         ><img class="middle-img" src="./images/project-desc.png" />
@@ -185,7 +211,7 @@
 
       <div class="third-section-inner">
         <p></p>
-        <p style="color: #b535f6;">Project Description</p>
+        <p style="color: #b535f6">Project Description</p>
         <p class="third-section-special-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
           maxime nulla quos fugit pariatur laudantium, aliquid tenetur vel
@@ -197,6 +223,9 @@
         </p>
       </div>
     </section>
+
+    <div id="plans"></div>
+    <div></div>
 
     <section class="fifth-section">
       <div class="fifth-section-inner1">
@@ -213,7 +242,7 @@
       </div>
 
       <div class="fifth-section-inner2">
-        <h1 style="color: #b535f6;">Showcase Plans</h1>
+        <h1 style="color: #b535f6">Showcase Plans</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
           maxime nulla quos fugit pariatur laudantium, aliquid tenetur vel
@@ -226,6 +255,11 @@
       </div>
     </section>
 
+    <div id="components"></div>
+    <h1 style="visibility: hidden">1</h1>
+    <h1 style="visibility: hidden">2</h1>
+    <h1 class="watch" style="color: #b535f6; text-align: center">Components</h1>
+
     <section class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="card swiper-slide">
@@ -234,7 +268,7 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">ESP 32</span>
+            <span class="card__title" style="color: #b535f6">ESP 32</span>
             <span class="card__name">Microcontroller</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -250,7 +284,7 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">PZEM-004T</span>
+            <span class="card__title" style="color: #b535f6">PZEM-004T</span>
             <span class="card__name">Sensor</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -274,7 +308,7 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">T92HP7D1X-12</span>
+            <span class="card__title" style="color: #b535f6">T92HP7D1X-12</span>
             <span class="card__name">Solid State Relay</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -290,7 +324,9 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">Hi-Link 220V to 12V</span>
+            <span class="card__title" style="color: #b535f6"
+              >Hi-Link 220V to 12V</span
+            >
             <span class="card__name">220-12V Step Down Converter</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -314,7 +350,7 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">SIM800L</span>
+            <span class="card__title" style="color: #b535f6">SIM800L</span>
             <span class="card__name">GSM Module</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -338,7 +374,7 @@
           </div>
 
           <div class="card__content">
-            <span class="card__title" style="color: #b535f6;">AR019</span>
+            <span class="card__title" style="color: #b535f6">AR019</span>
             <span class="card__name">SD Card Module</span>
             <p class="card__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
@@ -370,11 +406,11 @@
       /></a>
 
       <ul class="footer-ul1">
-        <li style="color: #b535f6;">ABOUT US</li>
-        <li style="color: #b535f6;">PROJECT</li>
-        <li style="color: #b535f6;">SHOWCASE</li>
-        <li style="color: #b535f6;">COMPONENTS</li>
-        <li style="color: #b535f6;">SCHEDULE</li>
+        <li style="color: #b535f6">ABOUT US</li>
+        <li style="color: #b535f6">PROJECT</li>
+        <li style="color: #b535f6">SHOWCASE</li>
+        <li style="color: #b535f6">COMPONENTS</li>
+        <li style="color: #b535f6">SCHEDULE</li>
       </ul>
 
       <!-- <ul class="footer-ul2">
@@ -432,6 +468,17 @@
       );
 
       ScrollReveal().reveal(".sixth-section,.footer", { origin: "bottom" });
+    </script>
+
+    <script>
+      cnt = 0;
+
+      function mode() {
+        cnt++;
+        if (cnt % 2 == 1)
+          document.getElementById("mode").innerHTML = "Dark Mode: On";
+        else document.getElementById("mode").innerHTML = "Dark Mode: Off";
+      }
     </script>
   </body>
 </html>
