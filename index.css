@@ -188,25 +188,25 @@ header {
 }
 
 .picture1 {
-  background: url(first-img.webp);
+  background: url(./images/shalva.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .picture2 {
-  background: url(second-img.jpg);
+  background: url(./images/irakli.avif);
   background-position: center center;
   background-size: cover;
 }
 
 .picture3 {
-  background: url(third-img.webp);
+  background: url(./images/giorgi.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .picture4 {
-  background: url(fourth-img.jpg);
+  background: url(./images/Chkhaidze-David.jpeg);
   background-position: center center;
   background-size: cover;
 }
@@ -271,7 +271,7 @@ header {
 .dates-content {
   display: flex;
   justify-content: center;
-  height: 130px;
+  height: 150px;
   background-color: rgb(241, 241, 241);
   width: 100%;
   margin-top: 50px;
@@ -474,7 +474,7 @@ header {
 .fifth-section-inner1 {
   width: 650px;
   height: 380px;
-  background: url(./images/showcase.jpg);
+  background:linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1)), url('./images/showcase.jpg'); 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -702,6 +702,7 @@ header {
 .none {
   visibility: hidden;
 }
+
 
 @media screen and (max-width: 712px) {
   .header-ul li {
