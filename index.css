@@ -87,7 +87,7 @@ header {
 .first-section {
   height: 480px;
   /* background: url(./images/cover.jpg); */
-  background-position: center center;
+  background-position: top left;
   background:linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1)), url('./images/cover.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
