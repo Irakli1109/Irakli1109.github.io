@@ -48,6 +48,7 @@ header {
   display: flex;
   position: relative;
   left: 40px;
+  top: 10px;
 }
 
 .header-ul li {
