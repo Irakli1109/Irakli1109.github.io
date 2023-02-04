@@ -76,9 +76,9 @@
       <div class="first-section-info">
         <p>PREMIERS MAY 15</p>
 
-        <h1>The Smart Meter</h1>
+        <h1 id="text19">The Smart Meter</h1>
 
-        <p>
+        <p id="text20">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro error
           animi magni ullam et sequi vel quam? Fuga quod consequatur ut. Officia
           fugit perspiciatis qui autem doloribus repellendus similique ab?
@@ -475,6 +475,7 @@
 
       function mode() {
         cnt++;
+        console.log(window.innerWidth);
         if (cnt % 2 == 1) {
           document.getElementById("mode").innerHTML = "Dark Mode: On";
           document.body.style.backgroundColor = "black";
@@ -521,6 +522,15 @@
           document.getElementById("text16").style.color = "#bcbcbc";
           document.getElementById("text17").style.color = "#bcbcbc";
           document.getElementById("text18").style.color = "#bcbcbc";
+
+          if(window.innerWidth <= 726) {
+            document.getElementById("text19").style.color = "#bcbcbc";
+            document.getElementById("text20").style.color = "#bcbcbc";
+          } else{
+            document.getElementById("text19").style.color = "white";
+            document.getElementById("text20").style.color = "white";
+          }
+
         }
         else { 
           document.getElementById("mode").innerHTML = "Dark Mode: Off";
@@ -568,6 +578,14 @@
           document.getElementById("text16").style.color = "#404040";
           document.getElementById("text17").style.color = "#404040";
           document.getElementById("text18").style.color = "#404040";
+
+          if(window.innerWidth > 726) {
+            document.getElementById("text19").style.color = "white";
+            document.getElementById("text20").style.color = "white";
+          } else {
+            document.getElementById("text19").style.color = "#464545";
+            document.getElementById("text20").style.color = "#464545";
+          }
         }
       }
     </script>
