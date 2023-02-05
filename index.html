@@ -28,7 +28,7 @@
     />
   </head>
 
-  <body>
+  <body id="body">
     <header id="start">
       <div class="header-inner">
         <div id="hamburger">
@@ -36,10 +36,12 @@
            <div id="active-burger2"class="burger burger2 second-burger"></div>
            <div id="active-burger3"class="burger burger3 third-burger"></div> -->
         </div>
-        <img class="logo" src="./images/Smart_Meter_Logo.png" />
+        <a style="cursor: pointer" href="#body"
+          ><img class="logo" src="./images/Smart_Meter_Logo.png"
+        /></a>
         <ul id="toggle" class="header-ul">
           <li>
-            <a href="#secondSecId" style="color: #b535f6; text-decoration: none"
+            <a href="#team" style="color: #b535f6; text-decoration: none"
               >TEAM</a
             >
           </li>
@@ -92,7 +94,7 @@
       </div>
     </section>
 
-    <section class="second-section" id="secondSecId">
+    <section class="second-section" id="team">
       <div class="none">hello measeter</div>
       <div class="none">hello measeter</div>
       <h1 class="watch" style="color: #b535f6">Our Project Team</h1>
@@ -177,14 +179,12 @@
       <div class="dates-content">
         <div class="dates">
           <div class="dates-inner">
-            <p style="color: #b535f6; font-size: 22px;">Project Timeline</p>
+            <p style="color: #b535f6; font-size: 22px">Project Timeline</p>
           </div>
 
           <div class="dates-inner1">
             <div class="episode-dates date1">
-              <p id="text5">
-                Building The Board and Designing Web Page
-              </p>
+              <p id="text5">Building The Board and Designing Web Page</p>
               <p id="text6">January-February, 2023</p>
             </div>
 
@@ -274,7 +274,15 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
               veritatis labore provident non tempora odio est sunt, ipsum
             </p>
-            <button class="card__btn">View More</button>
+            <button class="card__btn">
+              <a
+                href="https://www.elecbee.com/en-23516-ESP32-S-WiFi-bluetooth-ESP32S-Serial-to-WiFi-Dual-Antenna-Module?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=9958698819&hsa_cam=18719854073&hsa_grp=140153146062&hsa_ad=630917925115&hsa_src=g&hsa_tgt=pla-1186173532455&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAxP2eBhBiEiwA5puhNapp9HPWkKfeaJ6UgPTsr7hYkH-IMncQSyhTKeb_3JnBOMcZ8Y517BoCtPcQAvD_BwE"
+                target="_blank"
+                style="text-decoration: none"
+                class="card__btn"
+                >View More</a
+              >
+            </button>
           </div>
         </div>
 
@@ -304,7 +312,7 @@
 
         <div class="card swiper-slide">
           <div class="card__image">
-            <img src="/images/ssr.png.crdownload" alt="relay image" />
+            <img src="/images/ssr.webp" alt="relay image" />
           </div>
 
           <div class="card__content">
@@ -314,7 +322,15 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
               veritatis labore provident non tempora odio est sunt, ipsum
             </p>
-            <button class="card__btn">View More</button>
+            <button class="card__btn">
+              <a
+                href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/T92HP7D1X-12/13549155"
+                target="_blank"
+                style="text-decoration: none"
+                class="card__btn"
+                >View More</a
+              >
+            </button>
           </div>
         </div>
 
@@ -401,16 +417,36 @@
     </section> -->
 
     <section class="footer">
-      <a href="#start"
+      <a href="#body"
         ><img width="170px" src="./images/Smart_Meter_Logo.png"
       /></a>
 
       <ul class="footer-ul1">
-        <li><a href="#secondSecId" style="color: #b535f6;; text-decoration: none">ABOUT US</a></li>
-        <li><a href="#project" style="color: #b535f6;; text-decoration: none">PROJECT</a></li>
-        <li><a href="#plans" style="color: #b535f6;; text-decoration: none">SHOWCASE</a></li>
-        <li><a href="#components" style="color: #b535f6;; text-decoration: none">COMPONENTS</a></li>
-        <li><a href="#schedule" style="color: #b535f6;; text-decoration: none">SCHEDULE</a></li>
+        <li>
+          <a href="#team" style="color: #b535f6; text-decoration: none"
+            >ABOUT US</a
+          >
+        </li>
+        <li>
+          <a href="#project" style="color: #b535f6; text-decoration: none"
+            >PROJECT</a
+          >
+        </li>
+        <li>
+          <a href="#plans" style="color: #b535f6; text-decoration: none"
+            >SHOWCASE</a
+          >
+        </li>
+        <li>
+          <a href="#components" style="color: #b535f6; text-decoration: none"
+            >COMPONENTS</a
+          >
+        </li>
+        <li>
+          <a href="#schedule" style="color: #b535f6; text-decoration: none"
+            >SCHEDULE</a
+          >
+        </li>
       </ul>
 
       <!-- <ul class="footer-ul2">
@@ -474,24 +510,48 @@
       cnt = 0;
 
       function mode() {
+        //document.getElementById("toggle").style.backgroundColor = "rgb(37, 33, 33)";
         cnt++;
         if (cnt % 2 == 1) {
           document.getElementById("mode").innerHTML = "Dark Mode: On";
           document.body.style.backgroundColor = "black";
-          document.getElementsByTagName("header")[0].style.backgroundColor = "rgb(37 33 33)";
-          document.getElementsByClassName("second-section-video")[0].style.backgroundColor = "black";
-          document.getElementsByClassName("second-section-video")[1].style.backgroundColor = "black";
-          document.getElementsByClassName("second-section-video")[2].style.backgroundColor = "black";
-          document.getElementsByClassName("second-section-video")[3].style.backgroundColor = "black";
-          document.getElementsByClassName("dates-content")[0].style.backgroundColor = "black";
+          document.getElementsByTagName("header")[0].style.backgroundColor =
+            "rgb(37 33 33)";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[0].style.backgroundColor = "black";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[1].style.backgroundColor = "black";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[2].style.backgroundColor = "black";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[3].style.backgroundColor = "black";
+          document.getElementsByClassName(
+            "dates-content"
+          )[0].style.backgroundColor = "black";
 
-          document.getElementsByClassName("swiper-slide")[0].style.backgroundColor = "rgb(75 51 51)";
-          document.getElementsByClassName("swiper-slide")[1].style.backgroundColor = "rgb(75 51 51)";
-          document.getElementsByClassName("swiper-slide")[2].style.backgroundColor = "rgb(75 51 51)";
-          document.getElementsByClassName("swiper-slide")[3].style.backgroundColor = "rgb(75 51 51)";
-          document.getElementsByClassName("swiper-slide")[4].style.backgroundColor = "rgb(75 51 51)";
-          document.getElementsByClassName("swiper-slide")[5].style.backgroundColor = "rgb(75 51 51)";
-          
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[0].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[1].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[2].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[3].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[4].style.backgroundColor = "rgb(75 51 51)";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[5].style.backgroundColor = "rgb(75 51 51)";
+
           //text colors for students
           document.getElementById("textHeader1").style.color = "#caa5a5";
           document.getElementById("text1").style.color = "#bcbcbc";
@@ -521,32 +581,55 @@
           document.getElementById("text16").style.color = "#bcbcbc";
           document.getElementById("text17").style.color = "#bcbcbc";
           document.getElementById("text18").style.color = "#bcbcbc";
+          document.getElementById("toggle").style.backgroundColor =
+            "rgb(37, 33, 33)";
 
-          if(window.innerWidth <= 726) {
+          if (window.innerWidth <= 726) {
             document.getElementById("text19").style.color = "#bcbcbc";
             document.getElementById("text20").style.color = "#bcbcbc";
-          } else{
+          } else {
             document.getElementById("text19").style.color = "white";
             document.getElementById("text20").style.color = "white";
           }
-
-        }
-        else { 
+        } else {
           document.getElementById("mode").innerHTML = "Dark Mode: Off";
-          document.body.style.backgroundColor = "white"
-          document.getElementsByTagName("header")[0].style.backgroundColor = "white";
-          document.getElementsByClassName("second-section-video")[0].style.backgroundColor = "white";
-          document.getElementsByClassName("second-section-video")[1].style.backgroundColor = "white";
-          document.getElementsByClassName("second-section-video")[2].style.backgroundColor = "white";
-          document.getElementsByClassName("second-section-video")[3].style.backgroundColor = "white";
-          document.getElementsByClassName("dates-content")[0].style.backgroundColor = "white";
+          document.body.style.backgroundColor = "white";
+          document.getElementsByTagName("header")[0].style.backgroundColor =
+            "white";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[0].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[1].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[2].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "second-section-video"
+          )[3].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "dates-content"
+          )[0].style.backgroundColor = "white";
 
-          document.getElementsByClassName("swiper-slide")[0].style.backgroundColor = "white";
-          document.getElementsByClassName("swiper-slide")[1].style.backgroundColor = "white";
-          document.getElementsByClassName("swiper-slide")[2].style.backgroundColor = "white";
-          document.getElementsByClassName("swiper-slide")[3].style.backgroundColor = "white";
-          document.getElementsByClassName("swiper-slide")[4].style.backgroundColor = "white";
-          document.getElementsByClassName("swiper-slide")[5].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[0].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[1].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[2].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[3].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[4].style.backgroundColor = "white";
+          document.getElementsByClassName(
+            "swiper-slide"
+          )[5].style.backgroundColor = "white";
 
           //text color for students
           document.getElementById("textHeader1").style.color = "#404040";
@@ -577,8 +660,9 @@
           document.getElementById("text16").style.color = "#404040";
           document.getElementById("text17").style.color = "#404040";
           document.getElementById("text18").style.color = "#404040";
+          document.getElementById("toggle").style.backgroundColor = "white";
 
-          if(window.innerWidth > 726) {
+          if (window.innerWidth > 726) {
             document.getElementById("text19").style.color = "white";
             document.getElementById("text20").style.color = "white";
           } else {
@@ -588,6 +672,5 @@
         }
       }
     </script>
-
   </body>
 </html>
