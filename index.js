@@ -8,5 +8,5 @@ const body = document.querySelector("body");
 hamburger.addEventListener("click", function () {
   header.classList.toggle("active");
   hamburger.classList.toggle("toggleBurger");
-  hamburger.style.toggle.style.traniston = "all 0.5s";
+  // hamburger.style.toggle.style.traniston = "all 0.5s";
 });
