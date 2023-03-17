@@ -28,7 +28,7 @@
     />
   </head>
 
-  <body id="body">
+  <body id="body" onload="myFunction()">
     <header id="start">
       <div class="header-inner">
         <div id="hamburger">
@@ -507,11 +507,16 @@
     </script>
 
     <script>
-      cnt = 0;
+      //cnt = 0;
 
       function mode() {
         //document.getElementById("toggle").style.backgroundColor = "rgb(37, 33, 33)";
+        if (localStorage.getItem("cnt") == null) {
+          localStorage.setItem("cnt", 0);
+          cnt = localStorage.getItem("cnt");
+        } else cnt = localStorage.getItem("cnt");
         cnt++;
+        localStorage.setItem("cnt", cnt);
         if (cnt % 2 == 1) {
           document.getElementById("mode").innerHTML = "Dark Mode: On";
           document.body.style.backgroundColor = "black";
@@ -670,6 +675,14 @@
             document.getElementById("text20").style.color = "#464545";
           }
         }
+      }
+
+      function myFunction () {
+        if (localStorage.getItem("cnt") != null) 
+        temp = localStorage.getItem("cnt")
+        temp--
+        localStorage.setItem("cnt", temp)
+        mode()
       }
     </script>
   </body>
