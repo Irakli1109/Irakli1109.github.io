@@ -685,11 +685,12 @@
       }
 
       function myFunction () {
-        if (localStorage.getItem("cnt") != null) 
+        if (localStorage.getItem("cnt") != null) {
         temp = localStorage.getItem("cnt")
         temp--
         localStorage.setItem("cnt", temp)
         mode()
+        }
       }
 
       function showContent() {
